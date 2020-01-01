@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		397F967623BD0789004B8C6A /* Shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = 397F967523BD0789004B8C6A /* Shifts.json */; };
+		397F967923BD07F7004B8C6A /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967823BD07F7004B8C6A /* Shift.swift */; };
+		397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967A23BD0A1C004B8C6A /* RoleType.swift */; };
+		397F967D23BD0B35004B8C6A /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967C23BD0B35004B8C6A /* ColorType.swift */; };
+		397F968023BD13D1004B8C6A /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967F23BD13D1004B8C6A /* ParsingManager.swift */; };
+		397F968323BD17C1004B8C6A /* WorkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F968223BD17C1004B8C6A /* WorkersProvider.swift */; };
+		397F968523BD1F69004B8C6A /* ShiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F968423BD1F69004B8C6A /* ShiftResult.swift */; };
+		397F968823BD282D004B8C6A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F968723BD282D004B8C6A /* Services.swift */; };
 		39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABA0BF23AEC1590081F914 /* AppDelegate.swift */; };
 		39ABA0C423AEC1590081F914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABA0C323AEC1590081F914 /* ViewController.swift */; };
 		39ABA0C723AEC1590081F914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ABA0C523AEC1590081F914 /* Main.storyboard */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		397F967523BD0789004B8C6A /* Shifts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shifts.json; sourceTree = "<group>"; };
+		397F967823BD07F7004B8C6A /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		397F967A23BD0A1C004B8C6A /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
+		397F967C23BD0B35004B8C6A /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		397F967F23BD13D1004B8C6A /* ParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManager.swift; sourceTree = "<group>"; };
+		397F968223BD17C1004B8C6A /* WorkersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkersProvider.swift; sourceTree = "<group>"; };
+		397F968423BD1F69004B8C6A /* ShiftResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftResult.swift; sourceTree = "<group>"; };
+		397F968723BD282D004B8C6A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		39ABA0BC23AEC1590081F914 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39ABA0BF23AEC1590081F914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39ABA0C323AEC1590081F914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +51,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397F967423BD04D9004B8C6A /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				397F967523BD0789004B8C6A /* Shifts.json */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		397F967723BD07D9004B8C6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				397F968423BD1F69004B8C6A /* ShiftResult.swift */,
+				397F967823BD07F7004B8C6A /* Shift.swift */,
+				397F967A23BD0A1C004B8C6A /* RoleType.swift */,
+				397F967C23BD0B35004B8C6A /* ColorType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		397F967E23BD0D03004B8C6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				397F967F23BD13D1004B8C6A /* ParsingManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		397F968123BD1410004B8C6A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				397F968223BD17C1004B8C6A /* WorkersProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		397F968623BD281A004B8C6A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				397F968723BD282D004B8C6A /* Services.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		39ABA0B323AEC1590081F914 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +113,11 @@
 		39ABA0BE23AEC1590081F914 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				397F968623BD281A004B8C6A /* Helpers */,
+				397F968123BD1410004B8C6A /* Providers */,
+				397F967E23BD0D03004B8C6A /* Services */,
+				397F967723BD07D9004B8C6A /* Models */,
+				397F967423BD04D9004B8C6A /* Resourses */,
 				39ABA0BF23AEC1590081F914 /* AppDelegate.swift */,
 				39ABA0C323AEC1590081F914 /* ViewController.swift */,
 				39ABA0C523AEC1590081F914 /* Main.storyboard */,
@@ -125,6 +189,7 @@
 				39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */,
 				39ABA0C923AEC15B0081F914 /* Assets.xcassets in Resources */,
 				39ABA0C723AEC1590081F914 /* Main.storyboard in Resources */,
+				397F967623BD0789004B8C6A /* Shifts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397F968023BD13D1004B8C6A /* ParsingManager.swift in Sources */,
+				397F968523BD1F69004B8C6A /* ShiftResult.swift in Sources */,
 				39ABA0C423AEC1590081F914 /* ViewController.swift in Sources */,
+				397F968323BD17C1004B8C6A /* WorkersProvider.swift in Sources */,
+				397F967D23BD0B35004B8C6A /* ColorType.swift in Sources */,
+				397F967923BD07F7004B8C6A /* Shift.swift in Sources */,
 				39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */,
+				397F968823BD282D004B8C6A /* Services.swift in Sources */,
+				397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
