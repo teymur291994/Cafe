@@ -1,0 +1,7 @@
+platform :ios, '12.0'
+use_frameworks!
+
+target 'Cafe' do
+  pod 'SnapKit', '~> 4.0'
+
+end

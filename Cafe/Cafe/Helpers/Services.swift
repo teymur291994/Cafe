@@ -8,4 +8,5 @@
 
 struct Services {
     let parsingManager = ParsingManager()
+    let uiManager = UIManager()
 }
