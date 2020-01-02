@@ -22,6 +22,12 @@ class ShiftsViewController: UIViewController {
         setupStyle()
     }
 
+    // MARK: - public
+
+    static func instantiate() -> ShiftsViewController {
+        return ShiftsViewController(nibName: "ShiftsViewController", bundle: nil)
+    }
+
     // MARK: - private
 
     private func setupViewHierarchy() {
@@ -39,5 +45,6 @@ class ShiftsViewController: UIViewController {
     // MARK: - actions
 
     @objc private func addButtonPressed() {
+        present(AddShiftViewController.instantiate(), animated: true, completion: nil)
     }
 }
