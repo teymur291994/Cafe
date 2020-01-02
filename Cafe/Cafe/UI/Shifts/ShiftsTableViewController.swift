@@ -27,6 +27,15 @@ class ShiftsTableViewController: UIViewController {
         setupContent()
     }
 
+    // MARK: - public
+
+    func addShift(_ shift: Shift) {
+        shifts.append(shift)
+
+        let indexPath:IndexPath = IndexPath(row:(shifts.count - 1), section:0)
+        tableView.insertRowAt(indexPath: indexPath)
+    }
+
     // MARK: - private
 
     private func setupContent() {

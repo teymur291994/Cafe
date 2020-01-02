@@ -9,6 +9,8 @@
 import UIKit
 
 extension UITableView {
+    // MARK - public
+
     func registerCell<T: UITableViewCell>(_: T.Type) where T: ReusableView {
         let bundle = Bundle(for: T.self)
         let nib = UINib(nibName: String(describing: T.self), bundle: bundle)
@@ -21,5 +23,12 @@ extension UITableView {
         }
 
         return cell
+    }
+
+    func insertRowAt(indexPath: IndexPath) {
+        beginUpdates()
+        insertRows(at: [indexPath], with: .fade)
+        endUpdates()
+        scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 }

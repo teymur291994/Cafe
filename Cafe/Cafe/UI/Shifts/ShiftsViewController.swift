@@ -12,6 +12,7 @@ class ShiftsViewController: UIViewController {
     // MARK: - properties
 
     @IBOutlet private weak var shiftsTableViewContainer: UIView!
+    private var shiftsTableViewController = ShiftsTableViewController()
 
     // MARK: - override
 
@@ -35,7 +36,7 @@ class ShiftsViewController: UIViewController {
     }
 
     private func setupBehaviour() {
-        add(childVC: ShiftsTableViewController(), to: shiftsTableViewContainer)
+        add(childVC: shiftsTableViewController, to: shiftsTableViewContainer)
     }
 
     private func setupStyle() {
@@ -45,6 +46,13 @@ class ShiftsViewController: UIViewController {
     // MARK: - actions
 
     @objc private func addButtonPressed() {
-        present(AddShiftViewController.instantiate(), animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: AddShiftViewController.instantiate(delegate: self))
+        present(navigationController, animated: true, completion: nil)
+    }
+}
+
+extension ShiftsViewController: AddShiftDelegate {
+    func addedShift(_ shift: Shift) {
+        shiftsTableViewController.addShift(shift)
     }
 }
