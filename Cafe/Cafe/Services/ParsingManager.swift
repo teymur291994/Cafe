@@ -28,7 +28,10 @@ class ParsingManager {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             decoder.dateDecodingStrategy = .formatted(dateFormatter)
             let jsonResult = try decoder.decode(ShiftsResult.self, from: data)
-            shiftsCompletion(jsonResult.shifts)
+            let sortedShifts = jsonResult.shifts.sorted {
+                $0.startDate.compare($1.startDate) == .orderedDescending
+            }
+            shiftsCompletion(sortedShifts)
         } catch let error {
             print("error: ", error)
             shiftsCompletion(nil)
