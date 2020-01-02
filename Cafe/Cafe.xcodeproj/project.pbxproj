@@ -21,6 +21,11 @@
 		397F969523BD3B25004B8C6A /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969423BD3B25004B8C6A /* UIManager.swift */; };
 		397F969723BE195B004B8C6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 397F969623BE195B004B8C6A /* Localizable.strings */; };
 		397F969923BE1B51004B8C6A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969823BE1B51004B8C6A /* String+Extension.swift */; };
+		397F969D23BE249C004B8C6A /* ShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969C23BE249C004B8C6A /* ShiftsTableViewController.swift */; };
+		397F969F23BE397C004B8C6A /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969E23BE397C004B8C6A /* UITableView+Extension.swift */; };
+		397F96A123BE39B6004B8C6A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F96A023BE39B6004B8C6A /* ReusableView.swift */; };
+		397F96A623BE3A66004B8C6A /* ShiftsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F96A423BE3A66004B8C6A /* ShiftsTableViewCell.swift */; };
+		397F96A723BE3A66004B8C6A /* ShiftsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F96A523BE3A66004B8C6A /* ShiftsTableViewCell.xib */; };
 		39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABA0BF23AEC1590081F914 /* AppDelegate.swift */; };
 		39ABA0C923AEC15B0081F914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39ABA0C823AEC15B0081F914 /* Assets.xcassets */; };
 		39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ABA0CA23AEC15B0081F914 /* LaunchScreen.storyboard */; };
@@ -43,6 +48,11 @@
 		397F969423BD3B25004B8C6A /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 		397F969623BE195B004B8C6A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		397F969823BE1B51004B8C6A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		397F969C23BE249C004B8C6A /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewController.swift; sourceTree = "<group>"; };
+		397F969E23BE397C004B8C6A /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		397F96A023BE39B6004B8C6A /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		397F96A423BE3A66004B8C6A /* ShiftsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewCell.swift; sourceTree = "<group>"; };
+		397F96A523BE3A66004B8C6A /* ShiftsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShiftsTableViewCell.xib; sourceTree = "<group>"; };
 		39ABA0BC23AEC1590081F914 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39ABA0BF23AEC1590081F914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39ABA0C823AEC15B0081F914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				397F968723BD282D004B8C6A /* Services.swift */,
+				397F96A023BE39B6004B8C6A /* ReusableView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -128,18 +139,19 @@
 		397F968923BD320B004B8C6A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				397F968C23BD34F5004B8C6A /* ShiftsViewController */,
+				397F968C23BD34F5004B8C6A /* Shifts */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		397F968C23BD34F5004B8C6A /* ShiftsViewController */ = {
+		397F968C23BD34F5004B8C6A /* Shifts */ = {
 			isa = PBXGroup;
 			children = (
 				397F968D23BD3510004B8C6A /* ShiftsViewController.swift */,
 				397F968E23BD3510004B8C6A /* ShiftsViewController.xib */,
+				397F969C23BE249C004B8C6A /* ShiftsTableViewController.swift */,
 			);
-			path = ShiftsViewController;
+			path = Shifts;
 			sourceTree = "<group>";
 		};
 		397F969123BD369D004B8C6A /* Extensions */ = {
@@ -147,8 +159,26 @@
 			children = (
 				397F969223BD36AC004B8C6A /* UIViewController+Extension.swift */,
 				397F969823BE1B51004B8C6A /* String+Extension.swift */,
+				397F969E23BE397C004B8C6A /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		397F96A223BE3A4A004B8C6A /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				397F96A323BE3A50004B8C6A /* Cells */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		397F96A323BE3A50004B8C6A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				397F96A423BE3A66004B8C6A /* ShiftsTableViewCell.swift */,
+				397F96A523BE3A66004B8C6A /* ShiftsTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		39ABA0B323AEC1590081F914 = {
@@ -172,6 +202,7 @@
 		39ABA0BE23AEC1590081F914 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				397F96A223BE3A4A004B8C6A /* CustomUI */,
 				397F969123BD369D004B8C6A /* Extensions */,
 				397F968923BD320B004B8C6A /* UI */,
 				397F968623BD281A004B8C6A /* Helpers */,
@@ -248,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397F96A723BE3A66004B8C6A /* ShiftsTableViewCell.xib in Resources */,
 				397F969723BE195B004B8C6A /* Localizable.strings in Resources */,
 				39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */,
 				39ABA0C923AEC15B0081F914 /* Assets.xcassets in Resources */,
@@ -311,10 +343,14 @@
 				397F969323BD36AC004B8C6A /* UIViewController+Extension.swift in Sources */,
 				397F969923BE1B51004B8C6A /* String+Extension.swift in Sources */,
 				397F968323BD17C1004B8C6A /* WorkersProvider.swift in Sources */,
+				397F96A123BE39B6004B8C6A /* ReusableView.swift in Sources */,
 				397F967D23BD0B35004B8C6A /* ColorType.swift in Sources */,
 				397F967923BD07F7004B8C6A /* Shift.swift in Sources */,
 				39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */,
+				397F969F23BE397C004B8C6A /* UITableView+Extension.swift in Sources */,
 				397F968F23BD3510004B8C6A /* ShiftsViewController.swift in Sources */,
+				397F96A623BE3A66004B8C6A /* ShiftsTableViewCell.swift in Sources */,
+				397F969D23BE249C004B8C6A /* ShiftsTableViewController.swift in Sources */,
 				397F968823BD282D004B8C6A /* Services.swift in Sources */,
 				397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */,
 			);
@@ -384,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -438,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

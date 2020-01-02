@@ -13,7 +13,7 @@ enum ColorType: String, Decodable {
     case blue
     case green
 
-    var color: UIColor {
+    var uiColor: UIColor {
         switch self {
         case .red:
             return .red

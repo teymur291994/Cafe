@@ -29,7 +29,7 @@ class ShiftsViewController: UIViewController {
     }
 
     private func setupBehaviour() {
-        add(childVC: UIViewController(), to: shiftsTableViewContainer)
+        add(childVC: ShiftsTableViewController(), to: shiftsTableViewContainer)
     }
 
     private func setupStyle() {
@@ -39,6 +39,5 @@ class ShiftsViewController: UIViewController {
     // MARK: - actions
 
     @objc private func addButtonPressed() {
-
     }
 }
