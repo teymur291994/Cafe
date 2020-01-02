@@ -19,6 +19,8 @@
 		397F969023BD3510004B8C6A /* ShiftsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F968E23BD3510004B8C6A /* ShiftsViewController.xib */; };
 		397F969323BD36AC004B8C6A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969223BD36AC004B8C6A /* UIViewController+Extension.swift */; };
 		397F969523BD3B25004B8C6A /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969423BD3B25004B8C6A /* UIManager.swift */; };
+		397F969723BE195B004B8C6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 397F969623BE195B004B8C6A /* Localizable.strings */; };
+		397F969923BE1B51004B8C6A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F969823BE1B51004B8C6A /* String+Extension.swift */; };
 		39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABA0BF23AEC1590081F914 /* AppDelegate.swift */; };
 		39ABA0C923AEC15B0081F914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39ABA0C823AEC15B0081F914 /* Assets.xcassets */; };
 		39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ABA0CA23AEC15B0081F914 /* LaunchScreen.storyboard */; };
@@ -39,6 +41,8 @@
 		397F968E23BD3510004B8C6A /* ShiftsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShiftsViewController.xib; sourceTree = "<group>"; };
 		397F969223BD36AC004B8C6A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		397F969423BD3B25004B8C6A /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		397F969623BE195B004B8C6A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		397F969823BE1B51004B8C6A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		39ABA0BC23AEC1590081F914 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39ABA0BF23AEC1590081F914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39ABA0C823AEC15B0081F914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				397F969223BD36AC004B8C6A /* UIViewController+Extension.swift */,
+				397F969823BE1B51004B8C6A /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				39ABA0C823AEC15B0081F914 /* Assets.xcassets */,
 				39ABA0CA23AEC15B0081F914 /* LaunchScreen.storyboard */,
 				39ABA0CD23AEC15B0081F914 /* Info.plist */,
+				397F969623BE195B004B8C6A /* Localizable.strings */,
 			);
 			path = Cafe;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397F969723BE195B004B8C6A /* Localizable.strings in Resources */,
 				39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */,
 				39ABA0C923AEC15B0081F914 /* Assets.xcassets in Resources */,
 				397F969023BD3510004B8C6A /* ShiftsViewController.xib in Resources */,
@@ -302,6 +309,7 @@
 				397F968023BD13D1004B8C6A /* ParsingManager.swift in Sources */,
 				397F968523BD1F69004B8C6A /* ShiftResult.swift in Sources */,
 				397F969323BD36AC004B8C6A /* UIViewController+Extension.swift in Sources */,
+				397F969923BE1B51004B8C6A /* String+Extension.swift in Sources */,
 				397F968323BD17C1004B8C6A /* WorkersProvider.swift in Sources */,
 				397F967D23BD0B35004B8C6A /* ColorType.swift in Sources */,
 				397F967923BD07F7004B8C6A /* Shift.swift in Sources */,

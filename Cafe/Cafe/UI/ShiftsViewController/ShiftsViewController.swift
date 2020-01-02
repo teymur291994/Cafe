@@ -18,11 +18,27 @@ class ShiftsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBehaviour()
+        setupViewHierarchy()
+        setupStyle()
     }
 
     // MARK: - private
 
+    private func setupViewHierarchy() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
+    }
+
     private func setupBehaviour() {
         add(childVC: UIViewController(), to: shiftsTableViewContainer)
+    }
+
+    private func setupStyle() {
+        title = "shiftsScreenTitle".localized
+    }
+
+    // MARK: - actions
+
+    @objc private func addButtonPressed() {
+
     }
 }
