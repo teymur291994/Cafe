@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDatePicker" customModule="Cafe" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="Df9-AP-WYr" id="4Ok-Y3-Zsb"/>
+                <outlet property="datePicker" destination="9rQ-CL-deA" id="EfC-VL-YQG"/>
+                <outlet property="doneButton" destination="d2e-jb-jHP" id="lmp-Jh-kBT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BYv-L2-3C5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="254"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-jb-jHP">
+                    <rect key="frame" x="341" y="6" width="49" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonPressed" destination="-1" eventType="touchUpInside" id="e2O-zy-tuV"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" translatesAutoresizingMaskIntoConstraints="NO" id="9rQ-CL-deA">
+                    <rect key="frame" x="0.0" y="38" width="414" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="dVg-Ox-Sev"/>
+                    </constraints>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-AP-WYr">
+                    <rect key="frame" x="24" y="7" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonPressed" destination="-1" eventType="touchUpInside" id="K7J-ga-PMq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9rQ-CL-deA" firstAttribute="leading" secondItem="rob-jE-cEd" secondAttribute="leading" id="4mf-Yw-YdJ"/>
+                <constraint firstItem="d2e-jb-jHP" firstAttribute="top" secondItem="BYv-L2-3C5" secondAttribute="top" constant="6" id="FNY-tu-ogR"/>
+                <constraint firstItem="9rQ-CL-deA" firstAttribute="trailing" secondItem="rob-jE-cEd" secondAttribute="trailing" id="Oz6-Og-HO6"/>
+                <constraint firstAttribute="trailing" secondItem="d2e-jb-jHP" secondAttribute="trailing" constant="24" id="Pyx-Xf-3Tj"/>
+                <constraint firstItem="Df9-AP-WYr" firstAttribute="leading" secondItem="BYv-L2-3C5" secondAttribute="leading" constant="24" id="WCT-G3-Yo1"/>
+                <constraint firstItem="Df9-AP-WYr" firstAttribute="centerY" secondItem="d2e-jb-jHP" secondAttribute="centerY" id="Zjj-8Q-Lhx"/>
+                <constraint firstAttribute="bottom" secondItem="9rQ-CL-deA" secondAttribute="bottom" id="fTa-3d-1hF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rob-jE-cEd"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="-390.40178571428572"/>
+        </view>
+    </objects>
+</document>

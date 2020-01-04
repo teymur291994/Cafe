@@ -8,4 +8,12 @@
 
 // Shifts screen
 "shiftsScreenTitle" = "Coffee Co Shifts";
+
+// Add Shift Screen
 "addShiftScreenTitle" = "Add a Shift";
+"addShiftScreenStartDate" = "Start date";
+"addShiftScreenEndDate" = "End date";
+
+// CustomDatePicker
+"customDatePickerDone" = "Done";
+"customDatePickerCancel" = "Cancel";
