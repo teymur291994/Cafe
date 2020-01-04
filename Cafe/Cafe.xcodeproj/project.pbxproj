@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39064F1023BE5DFC00A92C06 /* AddShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F0E23BE5DFC00A92C06 /* AddShiftViewController.swift */; };
 		39064F1123BE5DFC00A92C06 /* AddShiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39064F0F23BE5DFC00A92C06 /* AddShiftViewController.xib */; };
+		39064F1323C0CC3900A92C06 /* AddShiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1223C0CC3800A92C06 /* AddShiftTableViewController.swift */; };
 		397F967623BD0789004B8C6A /* Shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = 397F967523BD0789004B8C6A /* Shifts.json */; };
 		397F967923BD07F7004B8C6A /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967823BD07F7004B8C6A /* Shift.swift */; };
 		397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967A23BD0A1C004B8C6A /* RoleType.swift */; };
@@ -38,6 +39,7 @@
 		0EC4A9A80289E782CD23BA96 /* Pods_Cafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39064F0E23BE5DFC00A92C06 /* AddShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftViewController.swift; sourceTree = "<group>"; };
 		39064F0F23BE5DFC00A92C06 /* AddShiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddShiftViewController.xib; sourceTree = "<group>"; };
+		39064F1223C0CC3800A92C06 /* AddShiftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftTableViewController.swift; sourceTree = "<group>"; };
 		397F967523BD0789004B8C6A /* Shifts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shifts.json; sourceTree = "<group>"; };
 		397F967823BD07F7004B8C6A /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 		397F967A23BD0A1C004B8C6A /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				39064F0E23BE5DFC00A92C06 /* AddShiftViewController.swift */,
 				39064F0F23BE5DFC00A92C06 /* AddShiftViewController.xib */,
+				39064F1223C0CC3800A92C06 /* AddShiftTableViewController.swift */,
 			);
 			path = "Add shift";
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				397F968323BD17C1004B8C6A /* WorkersProvider.swift in Sources */,
 				397F96A123BE39B6004B8C6A /* ReusableView.swift in Sources */,
 				397F967D23BD0B35004B8C6A /* ColorType.swift in Sources */,
+				39064F1323C0CC3900A92C06 /* AddShiftTableViewController.swift in Sources */,
 				397F967923BD07F7004B8C6A /* Shift.swift in Sources */,
 				39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */,
 				39064F1023BE5DFC00A92C06 /* AddShiftViewController.swift in Sources */,

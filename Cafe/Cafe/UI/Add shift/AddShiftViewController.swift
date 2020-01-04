@@ -17,6 +17,7 @@ class AddShiftViewController: UIViewController {
     // MARK: - properties
     @IBOutlet private var addShiftTableViewContainer: UIView!
     weak var delegate: AddShiftDelegate!
+    private var addShiftTableViewController = AddShiftTableViewController()
 
     // MARK: - override
 
@@ -38,6 +39,7 @@ class AddShiftViewController: UIViewController {
 
     private func setupViewHierarchy() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonPressed))
+        add(childVC: addShiftTableViewController, to: addShiftTableViewContainer)
     }
 
     private func setupContent() {

@@ -18,7 +18,6 @@ class ShiftsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBehaviour()
         setupViewHierarchy()
         setupStyle()
     }
@@ -33,9 +32,6 @@ class ShiftsViewController: UIViewController {
 
     private func setupViewHierarchy() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
-    }
-
-    private func setupBehaviour() {
         add(childVC: shiftsTableViewController, to: shiftsTableViewContainer)
     }
 
