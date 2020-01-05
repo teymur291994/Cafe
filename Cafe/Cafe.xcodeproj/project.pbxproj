@@ -10,8 +10,8 @@
 		39064F1023BE5DFC00A92C06 /* AddShiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F0E23BE5DFC00A92C06 /* AddShiftViewController.swift */; };
 		39064F1123BE5DFC00A92C06 /* AddShiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39064F0F23BE5DFC00A92C06 /* AddShiftViewController.xib */; };
 		39064F1323C0CC3900A92C06 /* AddShiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1223C0CC3800A92C06 /* AddShiftTableViewController.swift */; };
-		39064F1823C0D99000A92C06 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1623C0D99000A92C06 /* DatePickerTableViewCell.swift */; };
-		39064F1923C0D99000A92C06 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39064F1723C0D99000A92C06 /* DatePickerTableViewCell.xib */; };
+		39064F1823C0D99000A92C06 /* AddShiftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1623C0D99000A92C06 /* AddShiftTableViewCell.swift */; };
+		39064F1923C0D99000A92C06 /* AddShiftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39064F1723C0D99000A92C06 /* AddShiftTableViewCell.xib */; };
 		39064F1D23C0E63D00A92C06 /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39064F1B23C0E63D00A92C06 /* CustomDatePicker.xib */; };
 		39064F1E23C0E63D00A92C06 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1C23C0E63D00A92C06 /* CustomDatePicker.swift */; };
 		39064F2023C0E67A00A92C06 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1F23C0E67A00A92C06 /* NibView.swift */; };
@@ -47,8 +47,8 @@
 		39064F0E23BE5DFC00A92C06 /* AddShiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftViewController.swift; sourceTree = "<group>"; };
 		39064F0F23BE5DFC00A92C06 /* AddShiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddShiftViewController.xib; sourceTree = "<group>"; };
 		39064F1223C0CC3800A92C06 /* AddShiftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftTableViewController.swift; sourceTree = "<group>"; };
-		39064F1623C0D99000A92C06 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
-		39064F1723C0D99000A92C06 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		39064F1623C0D99000A92C06 /* AddShiftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftTableViewCell.swift; sourceTree = "<group>"; };
+		39064F1723C0D99000A92C06 /* AddShiftTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddShiftTableViewCell.xib; sourceTree = "<group>"; };
 		39064F1B23C0E63D00A92C06 /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
 		39064F1C23C0E63D00A92C06 /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		39064F1F23C0E67A00A92C06 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 		39064F1523C0D97400A92C06 /* AddShiftsCell */ = {
 			isa = PBXGroup;
 			children = (
-				39064F1623C0D99000A92C06 /* DatePickerTableViewCell.swift */,
-				39064F1723C0D99000A92C06 /* DatePickerTableViewCell.xib */,
+				39064F1623C0D99000A92C06 /* AddShiftTableViewCell.swift */,
+				39064F1723C0D99000A92C06 /* AddShiftTableViewCell.xib */,
 			);
 			path = AddShiftsCell;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39064F1923C0D99000A92C06 /* DatePickerTableViewCell.xib in Resources */,
+				39064F1923C0D99000A92C06 /* AddShiftTableViewCell.xib in Resources */,
 				397F96A723BE3A66004B8C6A /* ShiftsTableViewCell.xib in Resources */,
 				397F969723BE195B004B8C6A /* Localizable.strings in Resources */,
 				39ABA0CC23AEC15B0081F914 /* LaunchScreen.storyboard in Resources */,
@@ -417,7 +417,7 @@
 				397F967923BD07F7004B8C6A /* Shift.swift in Sources */,
 				39ABA0C023AEC1590081F914 /* AppDelegate.swift in Sources */,
 				39064F1023BE5DFC00A92C06 /* AddShiftViewController.swift in Sources */,
-				39064F1823C0D99000A92C06 /* DatePickerTableViewCell.swift in Sources */,
+				39064F1823C0D99000A92C06 /* AddShiftTableViewCell.swift in Sources */,
 				397F969F23BE397C004B8C6A /* UITableView+Extension.swift in Sources */,
 				397F968F23BD3510004B8C6A /* ShiftsViewController.swift in Sources */,
 				397F96A623BE3A66004B8C6A /* ShiftsTableViewCell.swift in Sources */,

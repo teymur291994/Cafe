@@ -9,13 +9,13 @@
 import UIKit
 
 protocol AddShiftsTableViewCellDelegate: class {
-    func dateButtonPressed(in cell: DatePickerTableViewCell)
+    func optionButtonPressed(in cell: AddShiftTableViewCell)
 }
 
-class DatePickerTableViewCell: UITableViewCell {
+class AddShiftTableViewCell: UITableViewCell {
     // MARK: - properties
 
-    @IBOutlet private var dateButton: UIButton!
+    @IBOutlet private var optionButton: UIButton!
     @IBOutlet private var dateLabel: UILabel!
     weak var delegate: AddShiftsTableViewCellDelegate!
 
@@ -33,21 +33,21 @@ class DatePickerTableViewCell: UITableViewCell {
         self.delegate = delegate
     }
 
-    func setDateValue(_ dateString: String) {
-        dateButton.setTitle(dateString, for: .normal)
+    func setValue(_ dateString: String) {
+        optionButton.setTitle(dateString, for: .normal)
     }
 
     // MARK: - private
 
     private func setupStyle() {
-        dateButton.layer.borderWidth = 1
+        optionButton.layer.borderWidth = 1
     }
 
     // MARK: - actions
 
-    @IBAction private func dateButtonPressed() {
-        delegate.dateButtonPressed(in: self)
+    @IBAction private func optionButtonPressed() {
+        delegate.optionButtonPressed(in: self)
     }
 }
 
-extension DatePickerTableViewCell: ReusableView {}
+extension AddShiftTableViewCell: ReusableView {}

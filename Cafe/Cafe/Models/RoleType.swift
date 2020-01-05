@@ -12,3 +12,5 @@ enum RoleType: String, Decodable {
     case frontOfHouse = "Front of House"
     case cook = "Cook"
 }
+
+extension RoleType: CaseIterable {}

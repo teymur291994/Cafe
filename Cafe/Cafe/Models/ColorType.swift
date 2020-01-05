@@ -24,3 +24,5 @@ enum ColorType: String, Decodable {
         }
     }
 }
+
+extension ColorType: CaseIterable {}

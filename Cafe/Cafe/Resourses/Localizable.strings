@@ -13,6 +13,11 @@
 "addShiftScreenTitle" = "Add a Shift";
 "addShiftScreenStartDate" = "Start date";
 "addShiftScreenEndDate" = "End date";
+"addShiftScreenEmployee" = "Employee";
+"addShiftScreenRole" = "Role";
+"addShiftScreenColor" = "Color";
+"addShiftScreenChooseOption" = "Choose option";
+"addShiftScreenCancel" = "Cancel";
 
 // CustomDatePicker
 "customDatePickerDone" = "Done";
