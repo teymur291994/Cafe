@@ -19,7 +19,7 @@ struct UIManager {
     // MARK: - public
 
     func setRootViewController() {
-        let shiftsViewController = ShiftsViewController(nibName: "ShiftsViewController", bundle: nil)
+        let shiftsViewController = ShiftsViewController.instantiate()
         let navigationController = UINavigationController(rootViewController: shiftsViewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

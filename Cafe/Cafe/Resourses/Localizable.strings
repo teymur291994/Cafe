@@ -1,0 +1,30 @@
+/*
+  Localizable.strings
+  Cafe
+
+  Created by Timur on 1/2/20.
+  Copyright © 2020 Timur. All rights reserved.
+*/
+
+// Shifts screen
+"shiftsScreenTitle" = "Coffee Co Shifts";
+
+// Add Shift Screen
+"addShiftScreenTitle" = "Add a Shift";
+"addShiftScreenStartDate" = "Start date";
+"addShiftScreenEndDate" = "End date";
+"addShiftScreenEmployee" = "Employee";
+"addShiftScreenRole" = "Role";
+"addShiftScreenColor" = "Color";
+"addShiftScreenChooseOption" = "Choose option";
+"addShiftScreenCancel" = "Cancel";
+"addShiftScreenStartDateShouldBeGreater" = "Start date should be greater than end date";
+"addShiftScreenErrorEmptyFields" = "Please, fulfill empty fields";
+
+// CustomDatePicker
+"customDatePickerDone" = "Done";
+"customDatePickerCancel" = "Cancel";
+
+// Alert
+"alertTitleError" = "Error";
+"alertTitleOK" = "OK";

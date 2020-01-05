@@ -21,4 +21,15 @@ struct WorkersProvider {
         }
         shiftsCompletion(nil)
     }
+
+    func workers(workersCompletion: (_ workers: [String]?) -> Void) {
+        shifts { (shifts) in
+            guard let shifts = shifts else { return }
+            let shiftWorkersNames = shifts.map {
+                $0.name
+            }
+            let uniqueShiftWorkersNames = Array(Set(shiftWorkersNames))
+            workersCompletion(uniqueShiftWorkersNames)
+        }
+    }
 }

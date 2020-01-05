@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 
 extension UIViewController {
+    // MARK: - public
 
     func add(childVC: UIViewController, to container: UIView) {
 
@@ -19,5 +20,12 @@ extension UIViewController {
             maker.edges.equalToSuperview()
         }
         childVC.didMove(toParent: self)
+    }
+
+    func alert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "alertTitleOK".localized, style: .default)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
 }

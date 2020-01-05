@@ -12,24 +12,27 @@ class ShiftsViewController: UIViewController {
     // MARK: - properties
 
     @IBOutlet private weak var shiftsTableViewContainer: UIView!
+    private var shiftsTableViewController = ShiftsTableViewController()
 
     // MARK: - override
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBehaviour()
         setupViewHierarchy()
         setupStyle()
+    }
+
+    // MARK: - public
+
+    static func instantiate() -> ShiftsViewController {
+        return ShiftsViewController(nibName: "ShiftsViewController", bundle: nil)
     }
 
     // MARK: - private
 
     private func setupViewHierarchy() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
-    }
-
-    private func setupBehaviour() {
-        add(childVC: ShiftsTableViewController(), to: shiftsTableViewContainer)
+        add(childVC: shiftsTableViewController, to: shiftsTableViewContainer)
     }
 
     private func setupStyle() {
@@ -39,5 +42,13 @@ class ShiftsViewController: UIViewController {
     // MARK: - actions
 
     @objc private func addButtonPressed() {
+        let navigationController = UINavigationController(rootViewController: AddShiftViewController.instantiate(delegate: self))
+        present(navigationController, animated: true, completion: nil)
+    }
+}
+
+extension ShiftsViewController: AddShiftDelegate {
+    func addedShift(_ shift: Shift) {
+        shiftsTableViewController.addShift(shift)
     }
 }
