@@ -17,6 +17,7 @@
 		39064F2023C0E67A00A92C06 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F1F23C0E67A00A92C06 /* NibView.swift */; };
 		39064F2223C0E6B400A92C06 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F2123C0E6B400A92C06 /* UIView+Extension.swift */; };
 		39064F2423C0E76C00A92C06 /* UIDatePicker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F2323C0E76C00A92C06 /* UIDatePicker+Extension.swift */; };
+		39064F2923C2647800A92C06 /* CustomDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39064F2823C2647800A92C06 /* CustomDatePickerViewController.swift */; };
 		397F967623BD0789004B8C6A /* Shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = 397F967523BD0789004B8C6A /* Shifts.json */; };
 		397F967923BD07F7004B8C6A /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967823BD07F7004B8C6A /* Shift.swift */; };
 		397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F967A23BD0A1C004B8C6A /* RoleType.swift */; };
@@ -54,6 +55,7 @@
 		39064F1F23C0E67A00A92C06 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		39064F2123C0E6B400A92C06 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		39064F2323C0E76C00A92C06 /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
+		39064F2823C2647800A92C06 /* CustomDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerViewController.swift; sourceTree = "<group>"; };
 		397F967523BD0789004B8C6A /* Shifts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shifts.json; sourceTree = "<group>"; };
 		397F967823BD07F7004B8C6A /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 		397F967A23BD0A1C004B8C6A /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			path = CustomDatePicker;
 			sourceTree = "<group>";
 		};
+		39064F2723C2645300A92C06 /* CustomDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				39064F2823C2647800A92C06 /* CustomDatePickerViewController.swift */,
+			);
+			path = CustomDatePicker;
+			sourceTree = "<group>";
+		};
 		39772D043DED8BFD53D9FCAA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 		397F968923BD320B004B8C6A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39064F2723C2645300A92C06 /* CustomDatePicker */,
 				39064F0D23BE5DCC00A92C06 /* Add shift */,
 				397F968C23BD34F5004B8C6A /* Shifts */,
 			);
@@ -423,6 +434,7 @@
 				397F96A623BE3A66004B8C6A /* ShiftsTableViewCell.swift in Sources */,
 				397F969D23BE249C004B8C6A /* ShiftsTableViewController.swift in Sources */,
 				397F968823BD282D004B8C6A /* Services.swift in Sources */,
+				39064F2923C2647800A92C06 /* CustomDatePickerViewController.swift in Sources */,
 				397F967B23BD0A1C004B8C6A /* RoleType.swift in Sources */,
 				39064F2023C0E67A00A92C06 /* NibView.swift in Sources */,
 			);

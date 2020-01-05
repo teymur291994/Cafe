@@ -2,6 +2,7 @@ import UIKit
 
 protocol CustomDatePickerDelegate: class {
     func selected(_ date: Date)
+    func closeButtonPressed()
 }
 
 class CustomDatePicker: NibView {
@@ -54,23 +55,15 @@ class CustomDatePicker: NibView {
         doneButton.setTitle("customDatePickerDone".localized, for: .normal)
         cancelButton.setTitle("customDatePickerCancel".localized, for: .normal)
     }
-
-    private func hide() {
-        UIView.animate(withDuration: 0.5, animations: {
-            self.alpha = 0
-        }) { _ in
-            self.removeFromSuperview()
-        }
-    }
     
     // MARK: - actions
     
     @IBAction private func doneButtonPressed() {
         delegate.selected(datePicker.date)
-        hide()
+        delegate.closeButtonPressed()
     }
 
     @IBAction private func cancelButtonPressed() {
-        hide()
+        delegate.closeButtonPressed()
     }
 }

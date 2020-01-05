@@ -34,7 +34,6 @@ class AddShiftTableViewController: UIViewController {
         return tableView
     }()
     private var addShiftCells = [AddShiftCell]()
-    private lazy var customDatePicker = CustomDatePicker.instantiate(delegate: self)
     private var selectedCellIndexPath: IndexPath?
     private var shiftRole: RoleType?
     private var shiftEmployeeName: String?
@@ -50,6 +49,23 @@ class AddShiftTableViewController: UIViewController {
         setupContent()
         setupViewHierarchy()
         setupBehaviour()
+    }
+
+    // MARK: - public
+
+    func getShiftInfo() -> Shift? {
+        guard let role = shiftRole,
+        let employeeName = shiftEmployeeName,
+        let startDate = shiftStartDate,
+        let endDate = shiftEndDate,
+            let color = shiftColor else {
+                return nil
+        }
+        return Shift(role: role,
+                     name: employeeName,
+                     startDate: startDate,
+                     endDate: endDate,
+                     color: color)
     }
 
     // MARK: - private
@@ -99,17 +115,8 @@ class AddShiftTableViewController: UIViewController {
     }
 
     private func showDatePicker() {
-        if customDatePicker.superview == nil {
-            customDatePicker.alpha = 0
-            UIView.animate(withDuration: 0.5) {
-                self.view.addSubview(self.customDatePicker)
-                self.customDatePicker.snp.makeConstraints { (maker) in
-                    maker.height.equalTo(254)
-                    maker.left.right.bottom.equalToSuperview()
-                }
-                self.customDatePicker.alpha = 1
-            }
-        }
+        let customDatePickerViewController = CustomDatePickerViewController(delegate: self)
+        present(customDatePickerViewController, animated: true)
     }
 
     private func showActionSheet(with type: AddShiftCellType) {
@@ -195,7 +202,7 @@ extension AddShiftTableViewController: AddShiftsTableViewCellDelegate {
     }
 }
 
-extension AddShiftTableViewController: CustomDatePickerDelegate {
+extension AddShiftTableViewController: CustomDatePickerViewControllerDelegate {
     func selected(_ date: Date) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
