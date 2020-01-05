@@ -137,7 +137,7 @@ class AddShiftTableViewController: UIViewController {
         }
 
         values.forEach {
-            let selectedValue = $0
+            var selectedValue = $0
             let action = UIAlertAction(title: selectedValue, style: .default, handler:
             {
                 (alert: UIAlertAction!) -> Void in
@@ -154,6 +154,7 @@ class AddShiftTableViewController: UIViewController {
                 default:
                     return
                 }
+                selectedValue = selectedValue.capitalized
                 self.setOptionValue(selectedValue)
             })
             optionMenu.addAction(action)
