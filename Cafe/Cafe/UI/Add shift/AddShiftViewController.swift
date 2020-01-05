@@ -49,7 +49,14 @@ class AddShiftViewController: UIViewController {
     // MARK: - actions
 
     @objc private func saveButtonPressed() {
-        let shift = Shift(role: .cook, name: "", startDate: Date(), endDate: Date(), color: .blue)
+        guard let shift = addShiftTableViewController.getShift() else {
+            alert(title: "alertTitleError".localized, message: "addShiftScreenErrorEmptyFields".localized)
+            return
+        }
+        if shift.startDate > shift.endDate {
+            alert(title: "alertTitleError".localized, message: "addShiftScreenStartDateShouldBeGreater".localized)
+            return
+        }
         delegate.addedShift(shift)
         navigationController?.dismiss(animated: true)
     }

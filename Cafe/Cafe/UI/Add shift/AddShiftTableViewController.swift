@@ -53,7 +53,7 @@ class AddShiftTableViewController: UIViewController {
 
     // MARK: - public
 
-    func getShiftInfo() -> Shift? {
+    func getShift() -> Shift? {
         guard let role = shiftRole,
         let employeeName = shiftEmployeeName,
         let startDate = shiftStartDate,

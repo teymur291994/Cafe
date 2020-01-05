@@ -18,7 +18,13 @@
 "addShiftScreenColor" = "Color";
 "addShiftScreenChooseOption" = "Choose option";
 "addShiftScreenCancel" = "Cancel";
+"addShiftScreenStartDateShouldBeGreater" = "Start date should be greater than end date";
+"addShiftScreenErrorEmptyFields" = "Please, fulfill empty fields";
 
 // CustomDatePicker
 "customDatePickerDone" = "Done";
 "customDatePickerCancel" = "Cancel";
+
+// Alert
+"alertTitleError" = "Error";
+"alertTitleOK" = "OK";
